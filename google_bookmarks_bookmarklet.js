@@ -6,7 +6,7 @@ javascript:(
     if (location.href.match(/http[s]:\/\/www\.amazon\..*\/dp\/([^\/]+)\/.*/) ||
         location.href.match(/http[s]:\/\/www\.amazon\..*\/ASIN\/([^\/]+)\/.*/) ||
         location.href.match(/http[s]:\/\/www\.amazon\..*\/product\/([^\/]+)\/.*/)) {
-      url = "http://www.amazon.co.jp/dp/" + RegExp.$1;
+      url = "http://www.amazon.co.jp/gp/product/" + RegExp.$1 + "/";
     }
 
     var notes = (document.all)? document.selection.createRange().text : window.getSelection();
